@@ -1,0 +1,304 @@
+body {
+  font-family: verdana, geneva, sans-serif;
+  background-image: url("../img/paper_fibers.png");
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.3;
+}
+figure,
+header,
+address,
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+}
+/*WIDTH SETTING*/
+
+.nav-hold,
+.container {
+  width: 95%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/*NAVIGATION*/
+
+.nav-bar {
+  width: 100%;
+  background-color: #222;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+.nav-hold {
+  overflow: hidden;
+}
+.nav-logo {
+  float: left;
+  display: block;
+  padding: 20px 10px;
+  color: #f9f9f9;
+  font-weight: 600;
+}
+.nav-list {
+  float: right;
+}
+.nav-list li {
+  float: left;
+}
+.nav-list li a {
+  display: block;
+  padding: 20px 10px;
+  text-transform: uppercase;
+  color: #f9f9f9;
+}
+.nav-list li a:hover {
+  color: #23fc66;
+  font-weight: bold;
+  background-color: rgba(56, 56, 56, 0.5);
+}
+.nav-manu {
+  display: none;
+}
+/*CONTAINER*/
+
+.container {
+  padding-top: 9%;
+}
+/*FIGURE PROPERTY*/
+
+.big-head {
+  padding: 10p;
+  text-align: center;
+}
+.big-head img {
+  border-radius: 100%;
+  height: auto;
+}
+/*INTRO PROPERTY*/
+
+.intro {
+  text-align: center;
+  padding: 1%;
+}
+.intro h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/*ADDRESS PROPERTY*/
+
+address {
+  text-align: center;
+}
+address .email {
+  padding: 5px 5px;
+  border: 1px solid #222;
+}
+address .social-info {
+  margin-top: 5px;
+  padding: 10px 5px;
+}
+.social-info li {
+  display: inline-block;
+}
+.myButton {
+  -moz-box-shadow: 0px 10px 14px -7px #1b2418;
+  -webkit-box-shadow: 0px 10px 14px -7px #1b2418;
+  box-shadow: 0px 10px 14px -7px #1b2418;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #43f071), color-stop(1, #458522));
+  background: -moz-linear-gradient(top, #43f071 5%, #458522 100%);
+  background: -webkit-linear-gradient(top, #43f071 5%, #458522 100%);
+  background: -o-linear-gradient(top, #43f071 5%, #458522 100%);
+  background: -ms-linear-gradient(top, #43f071 5%, #458522 100%);
+  background: linear-gradient(to bottom, #43f071 5%, #458522 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#43f071', endColorstr='#458522', GradientType=0);
+  background-color: #43f071;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 28px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  transition-duration: 800ms;
+}
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #458522), color-stop(1, #43f071));
+  background: -moz-linear-gradient(top, #458522 5%, #43f071 100%);
+  background: -webkit-linear-gradient(top, #458522 5%, #43f071 100%);
+  background: -o-linear-gradient(top, #458522 5%, #43f071 100%);
+  background: -ms-linear-gradient(top, #458522 5%, #43f071 100%);
+  background: linear-gradient(to bottom, #458522 5%, #43f071 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#458522', endColorstr='#43f071', GradientType=0);
+  background-color: #458522;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 800ms;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+/*ABOUT ME*/
+
+.about-me {
+  text-align: center;
+  font-size: 0.8rem;
+}
+/*SKILL SET*/
+.skill-set h3 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.skill-collection {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.skill-single{
+  padding: 10px;
+  text-align: center;
+}
+.skill-single p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.skill-single .circle {
+  transition-duration: 600ms;
+}
+.skill-single .circle:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 600ms;
+}
+
+/*PROJECT*/
+.project h3 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.project-collection {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+}
+.project1 a {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  background-image: url("../img/link.png");
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  transition-duration: 1200ms;
+}
+
+.project-collection p {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  padding: 5px;
+  border-radius: 50px;
+  color: #50c455;
+  font-weight: bold;
+  font-size: 0.9em;
+  background-color: rgb(255, 255, 255);
+}
+.project1 a:hover {
+ -webkit-transform: rotate(360deg) scale(1.2);
+  -ms-transform: rotate(360deg) scale(1.2);
+  -o-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
+  border: 3px #58cc58 solid;
+  transition-duration: 1200ms;
+}
+
+/*EXPERIENCE PROPERTY*/
+
+.experience h3 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.experience article {
+  padding: 20px 10px;
+}
+.experience .job {
+  padding: 10px;
+}
+.experience h5, .experience p {
+  padding: 5px;
+}
+.experience h5 {
+  font-size: 0.85rem;
+  color: #6a6969;
+}
+
+.experience h5.jobtitle {
+  color: #323332;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.experience p {
+  font-size: 0.8rem;
+}
+
+
+
+/*EDUCATION PROPERTY*/
+.education h3 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.education article {
+  padding: 20px 10px;
+}
+.education .edu {
+  padding: 10px;
+}
+.education h5 {
+  font-size: 0.85rem;
+  color: #6a6969;
+  padding: 5px;
+}
+.education h5.degree {
+  color: #323332;
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+

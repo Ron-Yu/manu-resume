@@ -1,0 +1,32 @@
+/*PHONE 767px*/
+@media screen and (max-width: 767px) {
+  .nav-logo {
+    display: none;
+  }
+  .nav-hold {
+    text-align: center;
+  }
+  .nav-manu {
+    /*float: right;
+    display: block;*/
+    display: inline-block;
+    color: #f9f9f9;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  .nav-list {
+    float: none;
+    display: none;
+  }
+  .nav-list li {
+    float: none;
+  }
+  
+  .nav-list li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+/*screen larger than 768px*/
