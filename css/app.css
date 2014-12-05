@@ -154,9 +154,33 @@ address .social-info {
 /*ABOUT ME*/
 
 .about-me {
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.about-me h3 {
   text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.about-me ul {
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
   font-size: 0.8rem;
 }
+.about-me ul li {
+  padding: 10px 5px;
+  color: #6a6969;
+}
+.about-me ul li span {
+  font-weight: bold;
+  font-style: italic;
+  color: #323332;
+}
+
 /*SKILL SET*/
 .skill-set h3 {
   text-align: center;
@@ -175,8 +199,9 @@ address .social-info {
   text-align: center;
 }
 .skill-single p {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
+  color: #6a6969;
 }
 .skill-single .circle {
   transition-duration: 600ms;
