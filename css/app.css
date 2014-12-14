@@ -24,7 +24,6 @@ section {
   max-width: 768px;
   margin: 0 auto;
 }
-
 /*NAVIGATION*/
 
 .nav-bar {
@@ -180,8 +179,8 @@ address .social-info {
   font-style: italic;
   color: #323332;
 }
-
 /*SKILL SET*/
+
 .skill-set h3 {
   text-align: center;
   font-weight: bold;
@@ -194,7 +193,7 @@ address .social-info {
   justify-content: space-around;
   padding: 20px;
 }
-.skill-single{
+.skill-single {
   padding: 10px;
   text-align: center;
 }
@@ -213,14 +212,17 @@ address .social-info {
   transform: scale(1.2);
   transition-duration: 600ms;
 }
-
 /*PROJECT*/
+
 .project h3 {
   text-align: center;
   font-weight: bold;
   padding: 10px;
 }
 .project-collection {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
@@ -241,7 +243,6 @@ address .social-info {
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   transition-duration: 1200ms;
 }
-
 .project-collection p {
   display: inline-block;
   position: relative;
@@ -254,14 +255,13 @@ address .social-info {
   background-color: rgb(255, 255, 255);
 }
 .project1 a:hover {
- -webkit-transform: rotate(360deg) scale(1.2);
+  -webkit-transform: rotate(360deg) scale(1.2);
   -ms-transform: rotate(360deg) scale(1.2);
   -o-transform: rotate(360deg) scale(1.2);
   transform: rotate(360deg) scale(1.2);
   border: 3px #58cc58 solid;
   transition-duration: 1200ms;
 }
-
 /*EXPERIENCE PROPERTY*/
 
 .experience h3 {
@@ -275,27 +275,31 @@ address .social-info {
 .experience .job {
   padding: 10px;
 }
-.experience h5, .experience p {
+.experience h5,
+.experience ul {
   padding: 5px;
 }
 .experience h5 {
   font-size: 0.85rem;
   color: #6a6969;
 }
-
-.experience h5.jobtitle {
+.experience h5.jobtitle span {
   color: #323332;
-  font-weight: 600;
+  font-weight: bold;
   font-style: italic;
 }
-
-.experience p {
-  font-size: 0.8rem;
+.experience ul {
+  list-style: circle;
+  padding-left: 5%;
 }
-
-
-
+.experience ul li {
+  font-size: 0.8rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.5;
+}
 /*EDUCATION PROPERTY*/
+
 .education h3 {
   text-align: center;
   font-weight: bold;
@@ -312,18 +316,8 @@ address .social-info {
   color: #6a6969;
   padding: 5px;
 }
-.education h5.degree {
+.education h5.degree span {
   color: #323332;
-  font-weight: 600;
+  font-weight: bold;
   font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-

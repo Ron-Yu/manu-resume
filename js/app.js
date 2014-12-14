@@ -15,6 +15,27 @@ $(document).ready(function () {
     $project1.hover(function(){
       $projectRotate.stop().fadeToggle(2000);
     });
+    
+    /*navigation bar scroll in page*/
+     //find the in-page navigatin link
+     var navLink = $(".nav-hold a:not(#nav-manu)");
+     //click the link
+     //scroll the coordinated section to top
+     navLink.click(function(event){
+       var $this = $(this);
+       var $linkItem = $this.attr("href");
+       var $linkSection = $($linkItem);
+      $("html, body").animate({
+        scrollTop: $($linkSection).offset().top
+      },
+      800
+       );
+       event.preventDefault();
+     });
+     //because of fixed nav bar, you have to make the coordinated section not to hide by it
+  
+  
+  
 
       /*$(window).bind('scroll', function() {
      if ($(window).scrollTop() > 50) {

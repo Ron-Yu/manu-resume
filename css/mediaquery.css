@@ -30,3 +30,20 @@
 
 
 /*screen larger than 768px*/
+@media screen and (min-width: 920px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .about-me ul {
+    font-size: 1.1rem;
+  }
+  .experience h5, .education h5 {
+    font-size: 1.1rem;
+  }
+  .experience ul li {
+    font-size: 1rem;
+  }
+}

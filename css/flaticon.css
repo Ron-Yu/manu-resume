@@ -11,13 +11,15 @@
 [class*=" flaticon-"]:after {
   font-family: Flaticon;
   font-size: 20px;
-  font-style: nomal;
-  margin-left: 10px;
-  vertical-align: bottom;
+  font-style: normal;
+  margin-left: 0px;
 }
-.flaticon-email27:before {
+.flaticon-email20:before {
   content: "\e000";
+  margin-left: 10px;
+  margin-right: 5px;
+  vertical-align:bottom;
 }
-.flaticon-mail59:before {
+.flaticon-menu55:before {
   content: "\e001";
 }
