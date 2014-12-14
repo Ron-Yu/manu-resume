@@ -26,7 +26,7 @@ $(document).ready(function () {
        var $linkItem = $this.attr("href");
        var $linkSection = $($linkItem);
       $("html, body").animate({
-        scrollTop: $($linkSection).offset().top
+        scrollTop: $($linkSection).offset().top-60
       },
       800
        );
